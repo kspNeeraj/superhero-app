@@ -30,8 +30,16 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 
 
-app.get("/",(req,res)=>{
-    res.render("home")
+app.get("/",async (req,res)=>{
+    const batman=await axios("https://superheroapi.com/api/1230190087334410/180");
+   const data=batman.data;
+   const image=data.image.url;
+   console.log(data);
+
+    res.render("home",{
+        batman:batman.data,
+        url:image
+    })
 })
 
 

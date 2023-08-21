@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+    color: floralwhite;
+}
+
+.border{
+    border: 2px solid black;
+}
+#list{
+    list-style: none;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+
+.superhero{
+    
+}
+.superhero:hover{
+    cursor: pointer;
+    background-color: rgb(91, 91, 247);
+    color: white;
+}
+#body{
+    display: flex;
+}
+header{
+    width: 30%;
+}
+#superhero_dis{
+    width: 65%;
+    text-align: center;
+    height: 60vh;
+}
+.superhero_image{
+    height: 40vh;
+    width: 40vw;
+    margin: auto;
+    margin-top: 10px;;
+}
+
+#fav_super{
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.fav_superhero{
+    font-size: 1.5rem;
+    display: flex;
+}
+.fav_superhero_image{
+    height: 25vh;
+    width: 25vw;
+   
+}
+h2 a{
+    color: white;
+}
+
+.button{
+    height: 50px;
+    width: 60px;
+    margin: auto;
+    
+    position: relative;
+}
